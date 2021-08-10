@@ -1,0 +1,19 @@
+.section-heading h2 {
+    font-size: 30px;
+    text-transform: capitalize;
+    color: #2a2a2a;
+    font-weight: 700;
+    letter-spacing: 0.25px;
+    position: relative;
+    z-index: 2;
+    line-height: 44px;
+}
+
+.section-heading h2 em {
+    font-style: normal;
+    color: #03a4ed;
+}
+
+.section-heading h2 span {
+    color: #fe3f40;
+}

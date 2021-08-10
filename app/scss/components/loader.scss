@@ -1,0 +1,77 @@
+@use 'util'as *;
+
+
+
+// Loader
+.js-preloader {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--white);
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9999;
+    transition: opacity 0.25s ease;
+
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.preloader-inner {
+    position: relative;
+    width: rem(142);
+    height: rem(40);
+    background-color: var(--white);
+
+    &__dot {
+        position: absolute;
+        width: rem(16);
+        height: rem(16);
+        top: rem(12);
+        left: rem(15);
+        background-color: var(--primary);
+        border-radius: 50%;
+        transform: translateX(0);
+        animation: dot 2.8s infinite;
+    }
+
+    &__dots {
+        transform: translateX(0);
+        margin-top: rem(12);
+        margin-left: rem(31);
+        animation: dots 2.8s infinite;
+
+        span {
+            display: block;
+            float: left;
+            width: rem(16);
+            height: rem(16);
+            margin-left: rem(16);
+            background-color: var(--primary);
+            border-radius: 50%;
+        }
+    }
+}
+
+@keyframes dot {
+    50% {
+        transform: translateX(rem(96));
+    }
+}
+
+@keyframes dots {
+
+    50% {
+        transform: translateX(rem(-31));
+    }
+
+}
