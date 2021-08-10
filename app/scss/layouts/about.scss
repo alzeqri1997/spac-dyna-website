@@ -1,0 +1,41 @@
+#about {
+    margin-top: 120px;
+}
+
+.about-us {
+    background-image: url(../../images/about-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 140px 0px 120px 0px;
+
+    .left-image {
+        margin-right: 45px;
+    }
+
+    .services {
+        .item {
+            margin-bottom: 30px;
+
+            .icon {
+                float: left;
+                margin-right: 25px;
+
+                img {
+                    max-width: 70px;
+                }
+            }
+
+            h4 {
+                color: #fff;
+                font-size: 20px;
+                font-weight: 700;
+                margin-bottom: 12px;
+            }
+
+            p {
+                color: #fff;
+            }
+        }
+    }
+}
