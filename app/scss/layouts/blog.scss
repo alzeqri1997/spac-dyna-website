@@ -35,13 +35,26 @@
                 position: absolute;
                 margin-top: -100px;
                 padding: 30px;
+
+                .main-blue-button {
+                    position: absolute;
+                    bottom: -80px;
+                    left: 0;
+
+                    a {
+                        display: inline-block;
+                        background-color: var(--secondary);
+                        font-size: 15px;
+                        font-weight: 400;
+                        color: var(--white);
+                        text-transform: capitalize;
+                        padding: 12px 25px;
+                        border-radius: 23px;
+                        letter-spacing: 0.25px;
+                    }
+                }
             }
 
-            .main-blue-button {
-                position: absolute;
-                bottom: -80px;
-                left: 0;
-            }
         }
 
         ul {
@@ -104,10 +117,15 @@
                 margin: 20px 0px 15px 0px;
             }
 
-            img {
+        }
+
+        .right-image {
+
+            a img {
                 width: 250px;
                 border-radius: 20px;
             }
+
         }
     }
 }
