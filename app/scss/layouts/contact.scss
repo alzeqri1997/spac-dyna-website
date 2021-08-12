@@ -1,0 +1,133 @@
+.contact-us {
+    padding: 160px 0px;
+    background-image: url(../../images/contact-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+    .section-heading {
+        h2 {
+            color: var(--white);
+        }
+
+        p {
+            color: var(--white);
+            margin-top: 30px;
+        }
+    }
+}
+
+.phone-info {
+    margin-top: 40px;
+
+    h4 {
+        font-size: 20px;
+        font-weight: 700;
+        color: var(--white);
+
+        span {
+            i {
+                width: 46px;
+                height: 46px;
+                display: inline-block;
+                text-align: center;
+                line-height: 46px;
+                background-color: var(--white);
+                border-radius: 50%;
+                color: var(--primary-light);
+                font-size: 22px;
+                margin-left: 30px;
+                margin-right: 15px;
+            }
+
+            a {
+                color: var(--white);
+                font-size: 15px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+
+
+
+form#contact {
+    margin-left: 30px;
+    position: relative;
+    background-color: var(--white);
+    padding: 60px 30px;
+    border-radius: 20px;
+
+    .contact-dec {
+        position: absolute;
+        right: -166px;
+        bottom: 0;
+
+        img {
+            max-width: 178px;
+        }
+    }
+
+    input {
+        width: 100%;
+        height: 46px;
+        border-radius: 33px;
+        background-color: #d1f3ff;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-weight: 300;
+        color: var(--black);
+        padding: 0px 20px;
+        margin-bottom: 20px;
+
+        &::placeholder {
+            color: var(--black);
+        }
+    }
+
+
+    textarea {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 180px;
+        min-height: 140px;
+        height: 140px;
+        border-radius: 20px;
+        background-color: #d1f3ff;
+        border: none;
+        outline: none;
+        font-size: 15px;
+        font-weight: 300;
+        color: var(--black);
+        padding: 15px 20px;
+        margin-bottom: 20px;
+
+        &::placeholder {
+            color: var(--black);
+
+        }
+    }
+
+
+    button {
+        display: inline-block;
+        background-color: var(--secondary);
+        font-size: 15px;
+        font-weight: 400;
+        color: var(--white);
+        text-transform: capitalize;
+        padding: 12px 25px;
+        border-radius: 23px;
+        letter-spacing: 0.25px;
+        border: none;
+        outline: none;
+        transition: all .3s;
+
+        &:hover {
+            background-color: var(--primary);
+        }
+    }
+}
