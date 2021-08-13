@@ -1,3 +1,6 @@
+@use "../util/breakpoints.scss"as *;
+
+
 .contact-us {
     padding: 160px 0px;
     background-image: url(../../images/contact-bg.png);
@@ -5,7 +8,17 @@
     background-position: center center;
     background-size: cover;
 
+    @include breakpoint-down(medium) {
+        margin-top: 60px;
+        padding: 120px 0px;
+    }
+
     .section-heading {
+
+        @include breakpoint-down(medium) {
+            text-align: center;
+        }
+
         h2 {
             color: var(--white);
         }
@@ -59,10 +72,19 @@ form#contact {
     padding: 60px 30px;
     border-radius: 20px;
 
+    @include breakpoint-down(medium) {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+
     .contact-dec {
         position: absolute;
         right: -166px;
         bottom: 0;
+
+        @include breakpoint-down(xlarge) {
+            display: none;
+        }
 
         img {
             max-width: 178px;

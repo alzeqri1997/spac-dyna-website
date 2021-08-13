@@ -1,5 +1,5 @@
 .background-header {
-    background-color: #fff !important;
+    background-color: var(--white) !important;
     height: 80px !important;
     position: fixed !important;
     top: 0px;
@@ -14,11 +14,11 @@
 }
 
 .background-header .main-nav .nav li:hover a {
-    color: #fe3f40 !important;
+    color: var(--primary) !important;
 }
 
 .background-header .nav li a.active {
-    color: #fe3f40 !important;
+    color: var(--primary) !important;
 }
 
 .header-area {
@@ -42,7 +42,7 @@
 
 .header-area .main-nav .logo {
     line-height: 100px;
-    color: #fff;
+    color: var(--white);
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
@@ -68,7 +68,7 @@
 }
 
 .logo h4 span {
-    color: #fe3f40;
+    color: var(--primary);
 }
 
 .background-header .main-nav .logo h4 {
@@ -104,14 +104,14 @@
 
 .header-area .main-nav .nav li:last-child a,
 .background-header .main-nav .nav li:last-child a {
-    color: #fff !important;
+    color: var(--white) !important;
     padding: 0px 20px;
     font-weight: 400;
 }
 
 .header-area .main-nav .nav li:last-child a:hover,
 .header-area .main-nav .nav li:last-child a.active {
-    color: #fff !important;
+    color: var(--white) !important;
 }
 
 .header-area .main-nav .nav li a {
@@ -136,12 +136,12 @@
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
-    color: #fe3f40 !important;
+    color: var(--primary) !important;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
-    color: #fe3f40 !important;
+    color: var(--primary) !important;
     opacity: 1;
 }
 
@@ -207,8 +207,8 @@
 }
 
 .header-area .main-nav .nav li.submenu ul li a:hover {
-    background: #fff;
-    color: #fe3f40 !important;
+    background: var(--white);
+    color: var(--primary) !important;
     padding-left: 25px;
 }
 
@@ -348,7 +348,7 @@
 }
 
 .header-area.header-sticky .nav li a.active {
-    color: #fe3f40;
+    color: var(--primary);
 }
 
 @media (max-width: 1200px) {
@@ -386,7 +386,7 @@
 
     .header-area.header-sticky .nav li a:hover,
     .header-area.header-sticky .nav li a.active {
-        color: #fe3f40 !important;
+        color: var(--primary) !important;
         opacity: 1;
     }
 
@@ -443,7 +443,7 @@
 
     .header-area .main-nav .nav li {
         width: 100%;
-        background: #fff;
+        background: var(--white);
         border-bottom: 1px solid #e7e7e7;
         padding-left: 0px !important;
         padding-right: 0px !important;
@@ -460,7 +460,7 @@
 
     .header-area .main-nav .nav li a:hover {
         background: #eee !important;
-        color: #fe3f40 !important;
+        color: var(--primary) !important;
     }
 
     .header-area .main-nav .nav li.submenu ul {

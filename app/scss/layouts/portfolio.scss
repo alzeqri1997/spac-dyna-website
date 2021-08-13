@@ -1,3 +1,6 @@
+@use "../util/breakpoints.scss"as *;
+
+
 .our-portfolio {
     padding-top: 120px;
     margin-top: 0px;
@@ -8,10 +11,19 @@
         margin-bottom: 120px;
         position: relative;
         z-index: 1;
+
+        @include breakpoint-down(medium) {
+            margin: 0px 0px 80px 0px;
+        }
     }
 
     .item {
         position: relative;
+
+        @include breakpoint-down(medium) {
+            margin-bottom: 15px;
+            margin-top: 48px;
+        }
 
         &:hover .hidden-content {
             top: -100px;
@@ -29,6 +41,7 @@
     .hidden-content {
         background: linear-gradient(105deg, var(--primary) 0%, var(--primary-light) 100%);
         padding: 30px;
+
         border-radius: 20px;
         text-align: center;
         opacity: 0;
@@ -37,6 +50,19 @@
         position: absolute;
         z-index: 2;
         transition: all 0.5s;
+
+        @include breakpoint-down(medium) {
+            top: -100px;
+            opacity: 1;
+            visibility: visible;
+            padding: 40px;
+        }
+
+        @include breakpoint-down(small) {
+            padding: 50px;
+            top: -150px;
+            width: 100%;
+        }
 
         &::after {
             width: 20px;
@@ -73,6 +99,11 @@
         border-radius: 20px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         transition: all 0.5s;
+
+        @include breakpoint-down(medium) {
+            top: 60px;
+            margin-top: 160px;
+        }
 
         img {
             max-width: 100px;

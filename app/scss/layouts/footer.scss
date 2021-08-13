@@ -1,6 +1,12 @@
+@use "../util/breakpoints.scss"as *;
+
 footer p {
     text-align: center;
     margin: 30px 0px 45px 0px;
+
+    @include breakpoint-down(medium) {
+        margin: 15px 0px 30px 0px;
+    }
 
     a {
         color: var(--primary);
