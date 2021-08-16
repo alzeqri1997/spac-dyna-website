@@ -127,6 +127,7 @@
 
         @include breakpoint-down(small) {
             margin-left: 0px;
+            margin-top: 20rem;
         }
 
         ul li {
