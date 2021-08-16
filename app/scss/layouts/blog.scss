@@ -125,14 +125,31 @@
             margin-top: 10rem;
         }
 
+        @include breakpoint-down(small) {
+            margin-left: 0px;
+        }
+
         ul li {
             display: inline-flex;
             width: 100%;
             margin-bottom: 30px;
+
+            @include breakpoint-down(small) {
+                display: inline-block;
+                margin-top: 0px;
+                padding-top: 30px;
+                border-top: 1px solid #eee;
+            }
         }
 
         .left-content {
             margin-right: 45px;
+
+            @include breakpoint-down(small) {
+                margin-right: 0px;
+                width: 100%;
+                margin-bottom: 15px;
+            }
 
             span {
                 font-size: 15px;
@@ -157,9 +174,18 @@
 
         .right-image {
 
+
+            @include breakpoint-down(small) {
+                width: 100%;
+            }
+
             a img {
                 width: 250px;
                 border-radius: 20px;
+
+                @include breakpoint-down(small) {
+                    width: 100%;
+                }
             }
 
         }

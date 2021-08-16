@@ -30,6 +30,10 @@
             bottom: -220px;
             right: 0;
         }
+
+        @include breakpoint-down(small) {
+            bottom: -280px;
+        }
     }
 
     .services {
